@@ -44,12 +44,24 @@ p {
 	top: 0;
     overflow: hidden;
 	margin: auto;
-    width: 70%;
+    /*width: 70%;*/
 	
 }
 #menu li {
 	border-right: 4px solid #000000;
 	float: left;
+}
+#menu li.name {
+	border-right: 4px solid #000000;
+	float: right;
+    color: #ffffff;
+	font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+	text-decoration: none;
+    display: block;
+	padding: 14px 16px;
+	
+	
 }
 #mainheader h1 {
 	font-family: Verdana, Geneva, sans-serif;
