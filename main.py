@@ -8,15 +8,15 @@ app.config['SERVER_NAME'] = 'oldham.cc'
 def root():
 	return render_template('index.html', page_title='Home')
 
-@app.route('/about')
+@app.route('/about.html')
 def about():
 	return render_template('about.html', page_title='About')
 
-@app.route('/portfolio')
+@app.route('/portfolio.html')
 def portfolio():
 	return render_template('portfolio.html', page_title='Portfolio')
 
-@app.route('/contact')
+@app.route('/contact.html')
 def contact():
 	return render_template('contact.html', page_title='Contact')
 
