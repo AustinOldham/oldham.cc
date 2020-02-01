@@ -13,10 +13,10 @@
 					<li class="name">Austin Oldham</li>
 				</div>
 				<div style="float: right;">
-					<li><a class="{% block nav_home%}{% endblock %}" href="http://oldham.cc">Home</a></li>
-					<li><a class="{% block nav_about%}{% endblock %}" href="http://oldham.cc/about">About</a></li>
-					<li><a class="{% block nav_portfolio%}{% endblock %}" href="http://oldham.cc/portfolio">Portfolio</a></li>
-					<li><a class="{% block nav_contact%}{% endblock %}" href="http://oldham.cc/contact">Contact</a></li>
+					<li><a class="{% block nav_home%}{% endblock %}" href="url_for('root')">Home</a></li>
+					<li><a class="{% block nav_about%}{% endblock %}" href="url_for('about')">About</a></li>
+					<li><a class="{% block nav_portfolio%}{% endblock %}" href="url_for('portfolio')">Portfolio</a></li>
+					<li><a class="{% block nav_contact%}{% endblock %}" href="url_for('contact')">Contact</a></li>
 				</div>
 			</ul>
 		</nav>
