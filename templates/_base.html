@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/cssfile.css') }}">
+    <title>{{page_title}}</title>
+  </head>
+  <body>
+	<div id="menu">
+		<nav>
+			<ul>
+				<div style="float: left;">
+					<li class="name">Austin Oldham</li>
+				</div>
+				<div style="float: right;">
+					<li><a class="{% block nav_home%}{% endblock %}" href="http://oldham.cc">Home</a></li>
+					<li><a class="{% block nav_about%}{% endblock %}" href="http://oldham.cc/about">About</a></li>
+					<li><a class="{% block nav_portfolio%}{% endblock %}" href="http://oldham.cc/portfolio">Portfolio</a></li>
+					<li><a class="{% block nav_contact%}{% endblock %}" href="http://oldham.cc/contact">Contact</a></li>
+				</div>
+			</ul>
+		</nav>
+	</div>
+	<div id="textarea">
+		<h1>{% block header %}{% endblock %}</h1>
+		{% block content %}{% endblock %}
+	</div>
+  </body>
+</html>
